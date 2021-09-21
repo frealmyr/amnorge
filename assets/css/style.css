@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    background-color: #111111;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ambilight {
+    padding: 25px 50px 20px 50px;
+    position: relative;
+}
+
+.ambilight .image {
+    max-width: 450px;
+    min-width: 300px;
+    border-radius: 3%;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    -khtml-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ambilight .light {
+    opacity: 0.75;
+    filter: blur(100px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.about {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.social {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social .site {
+    display: inline-block;
+    width: 350px;
+    padding: 25px;
+}
+
+.font {
+    font-size: var(--size);
+    font-weight: var(--weight);
+    margin: var(--margin);
+    text-align: var(--text-align);
+    width: var(--width);
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+@media (max-width: 900px) {
+    .about {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about h1 {
+        font-weight: 600;
+        font-size: 12pt;
+    }
+    
+    .about p {
+        font-weight: 400;
+        font-size: 10pt;
+    }
+}
